@@ -5,9 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "npm ls react && webpack-dev-server --open --config webpack.dev.js",
-    "start": "npm ls react && webpack-dev-server --open --config webpack.dev.js",
-    "build": "rm -rf ../docs && webpack --config webpack.prod.js && npm run copy:static",
-    "copy:static": "cp -rf ./src/statics ../docs"
+    "start": "serve ../docs",
+    "build": "webpack --config webpack.prod.js"
   },
   "author": "kalghoum",
   "license": "MIT",
